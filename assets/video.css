@@ -32,18 +32,24 @@
   #container {
     width: 100%;
     max-width: 588px;
-    margin: 35px auto 0;
-    padding: 180px 24px 50px 24px; 
+    margin: 58px auto 0;
+    padding: 180px 24px 74px 24px;
     position: relative;
-    overflow-y: auto; 
-    height: calc(100vh - 58px - 50px);
+    overflow-y: scroll;
+    height: calc(100vh - 58px - 74px);
+    scrollbar-width: none; 
+  }
+  
+
+  #container::-webkit-scrollbar {
+    display: none;
   }  
   
   footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgb(0, 47, 157);
+    background-color: rgba(0, 47, 157, 0.39);
     padding: 10px;
     text-align: center;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
