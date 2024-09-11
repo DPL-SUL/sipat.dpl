@@ -16,21 +16,28 @@
   body {
     background: var(--bg-mob) no-repeat top center/cover;
     height: 100vh;
+    color: var(--text-color)
   }
   
-  body * {
-    font-family: "Inter", sans-serif;
-    color: var(--text-color);
+  body {
+    background: var(--bg-mob) no-repeat top center/cover;
+    background-attachment: fixed; 
+    height: 100vh;
+    overflow: hidden; 
+  }
+  h1 {
+    font-size: 24px;
   }
   
   #container {
     width: 100%;
     max-width: 588px;
-    margin: 58px auto 0;
-    padding: 180px 24px 24px 24px; 
+    margin: 35px auto 0;
+    padding: 180px 24px 50px 24px; 
     position: relative;
-    overflow: hidden;
-  }
+    overflow-y: auto; 
+    height: calc(100vh - 58px - 50px);
+  }  
   
   footer {
     position: fixed;
